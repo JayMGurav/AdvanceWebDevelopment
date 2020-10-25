@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CA3-Q1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <h1>Hello 👋, Enter below details</h1>
+  <div id="formDiv">
+    <form name="formElem" id="formElem" enctype="multipart/form-data">
+      <label>
+        Name :
+        <input type="text" id="name" name="name" placeholder="John Doe" />
+      </label>
+      <label>
+        Gender :
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Others">Others
+      </label>
+      <label>
+        Course :
+        <input type="text" id="course" name="course" placeholder="Computer science" />
+      </label>
+      <label>
+        Resume :
+        <input type="file" accept=".pdf">/>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="profile">
+    <div id="profilePic"></div>
+    <div id="profileDetails">
+      <p id="showName"></p>
+      <p id="showGender"></p>
+      <p id="showCourse"></p>
+      <p id="showResume"></p>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
